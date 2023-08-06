@@ -7,7 +7,6 @@ nav:
 theme:
   name: readthedocs
   highlightjs: true
-  locale: ru
 plugins:
   - search
   - autorefs
