@@ -21,6 +21,8 @@ pip install -r docs/requirements.txt
 
 # Run the mkdocs development server
 mkdocs serve
+# Build the MkDocs documentation
+mkdocs build -s --no-directory-urls
 ```
 
 &#9989; Open up [http://127.0.0.1:8000](http://127.0.0.1:8000/) in your browser.

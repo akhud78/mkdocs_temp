@@ -1,5 +1,6 @@
 site_name: SuperDuperPython
 nav:
+  - 'SuperDuperPython': index.md
   - 'Установка': install.md
   - 'Конфигурация': configuration.md
   - 'Использование': usage.md
