@@ -8,8 +8,10 @@ nav:
 theme:
   name: readthedocs
   highlightjs: true
+  locale: ru
 plugins:
-  - search
+  - search:
+      lang: ['en']
   - autorefs
   - mkdocstrings:
       handlers:
