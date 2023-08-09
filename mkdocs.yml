@@ -8,13 +8,19 @@ nav:
 theme:
 #  name: readthedocs
   name: material
+  palette:
+    scheme: default     # slate
+    primary: teal       # indigo
+    language: ru
+  features:
+    - navigation.indexes: false 
   highlightjs: true
-  locale: ru
+  locale: en
 plugins:
   - search:
       lang: ['en']
-  - with-pdf:
-      author: akhud78
+#  - with-pdf:
+#      author: akhud78
   - autorefs
   - mkdocstrings:
       handlers:
@@ -22,8 +28,16 @@ plugins:
         python:
           options:
             docstring_style: sphinx
+  - offline
 
 markdown_extensions:
   - markdown_include.include:
       base_path: .
   - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

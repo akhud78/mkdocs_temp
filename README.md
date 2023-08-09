@@ -4,6 +4,7 @@
 ## Ссылки
 
 - [MkDocs - Project documentation with Markdown](https://www.mkdocs.org/) &#127758;
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 - [mkdocs-sample](https://github.com/yriahi/mkdocs-sample) - Пример сайта документации
 - [Example: Basic MkDocs project for Read the Docs](https://example-mkdocs-basic.readthedocs.io/)
 - [example-mkdocs-basic](https://github.com/readthedocs-examples/example-mkdocs-basic)
@@ -11,7 +12,7 @@
 
 ## Сборка проекта
 
-```
+```bash
 $ rmvirtualenv mkdocs  # clean
 $ mkvirtualenv mkdocs -p python3
 (mkdocs) $ python -m pip install pip-tools
@@ -21,7 +22,7 @@ $ mkvirtualenv mkdocs -p python3
 (mkdocs) $ deactivate
 ```
 - Сервер разработки
-```
+```bash
 $ workon mkdocs
 (mkdocs) $ mkdocs serve
 INFO    -  Building documentation...
