@@ -23,7 +23,9 @@ charset-normalizer==3.2.0
 click==8.1.6
     # via mkdocs
 colorama==0.4.6
-    # via griffe
+    # via
+    #   griffe
+    #   mkdocs-material
 cssselect2==0.7.0
     # via weasyprint
 docutils==0.18.1
@@ -51,6 +53,7 @@ importlib-metadata==6.8.0
 jinja2==3.1.2
     # via
     #   mkdocs
+    #   mkdocs-material
     #   mkdocstrings
     #   sphinx
 libsass==0.22.0
@@ -60,6 +63,7 @@ markdown==3.4.4
     #   markdown-include
     #   mkdocs
     #   mkdocs-autorefs
+    #   mkdocs-material
     #   mkdocstrings
     #   pymdown-extensions
 markdown-include==0.8.1
@@ -75,10 +79,15 @@ mkdocs[i18n]==1.5.2
     # via
     #   -r docs/requirements.in
     #   mkdocs-autorefs
+    #   mkdocs-material
     #   mkdocs-with-pdf
     #   mkdocstrings
 mkdocs-autorefs==0.5.0
     # via mkdocstrings
+mkdocs-material==9.1.21
+    # via -r docs/requirements.in
+mkdocs-material-extensions==1.1.1
+    # via mkdocs-material
 mkdocs-with-pdf==0.9.3
     # via -r docs/requirements.in
 mkdocstrings[python]==0.22.0
@@ -102,9 +111,13 @@ pycparser==2.21
 pydyf==0.7.0
     # via weasyprint
 pygments==2.16.1
-    # via sphinx
+    # via
+    #   mkdocs-material
+    #   sphinx
 pymdown-extensions==10.1
-    # via mkdocstrings
+    # via
+    #   mkdocs-material
+    #   mkdocstrings
 pyphen==0.14.0
     # via weasyprint
 python-dateutil==2.8.2
@@ -118,8 +131,12 @@ pyyaml==6.0.1
     #   pyyaml-env-tag
 pyyaml-env-tag==0.1
     # via mkdocs
+regex==2023.8.8
+    # via mkdocs-material
 requests==2.31.0
-    # via sphinx
+    # via
+    #   mkdocs-material
+    #   sphinx
 six==1.16.0
     # via
     #   html5lib

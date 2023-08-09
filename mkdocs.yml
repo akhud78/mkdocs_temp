@@ -6,12 +6,15 @@ nav:
   - 'Использование': usage.md
   - 'API справочник': api.md
 theme:
-  name: readthedocs
+#  name: readthedocs
+  name: material
   highlightjs: true
   locale: ru
 plugins:
   - search:
       lang: ['en']
+  - with-pdf:
+      author: akhud78
   - autorefs
   - mkdocstrings:
       handlers:

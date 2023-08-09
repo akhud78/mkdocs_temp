@@ -11,21 +11,30 @@
 
 ## Сборка проекта
 
-This project has a standard MkDocs layout which is built by Read the Docs almost the same way that you would build it locally (on your own laptop!).
-
-You can build and view this documentation project locally - we recommend that you activate [a local Python virtual environment first](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment):
-
-```console
-# Install required Python dependencies (MkDocs etc.)
-pip install -r docs/requirements.txt
-
-# Run the mkdocs development server
-mkdocs serve
-# Build the MkDocs documentation
-mkdocs build -s --no-directory-urls
 ```
-
-&#9989; Open up [http://127.0.0.1:8000](http://127.0.0.1:8000/) in your browser.
+$ rmvirtualenv mkdocs  # clean
+$ mkvirtualenv mkdocs -p python3
+(mkdocs) $ python -m pip install pip-tools
+(mkdocs) $ cd mkdocs_temp
+(mkdocs) $ pip-compile docs/requirements.in
+(mkdocs) $ pip install -r docs/requirements.txt
+(mkdocs) $ deactivate
+```
+- Сервер разработки
+```
+$ workon mkdocs
+(mkdocs) $ mkdocs serve
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+INFO    -  Documentation built in 0.06 seconds
+INFO    -  [14:29:04] Watching paths for changes: 'docs', 'mkdocs.yml'
+INFO    -  [14:29:04] Serving on http://127.0.0.1:8000/
+```
+- [Открыть в браузере](http://127.0.0.1:8000/)
+- Статический сайт
+```
+$ mkdocs build -s --no-directory-urls
+```
 
 ## Команды
 
